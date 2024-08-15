@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeem Pasha | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+  
+   
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-blue-400">Azeem Pasha</h1>
+            <ul class="hidden md:flex space-x-8 text-lg">
+                <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#resume" class="hover:text-blue-400">Resume</a></li>
+                <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-2xl focus:outline-none">&#9776;</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="space-y-4 py-4">
+            <li><a href="#home" class="block px-4">Home</a></li>
+            <li><a href="#resume" class="block px-4">Resume</a></li>
+            <li><a href="#skills" class="block px-4">Skills</a></li>
+            <li><a href="#about" class="block px-4">About</a></li>
+            <li><a href="#contact" class="block px-4">Contact</a></li>
+            <li><button id="close-menu" class="block px-4">Close</button></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="">
+        <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center relative overflow-hidden">
+            <div class="sliding-background"></div>
+            <div class="bg-black bg-opacity-60 p-10 rounded-lg shadow-2xl text-center z-10">
+                <h2 class="text-5xl font-bold text-blue-400 mb-4">Hi, I'm Azeem Pasha</h2>
+                <p class="text-2xl mb-6">A Passionate Web Developer</p>
+                <a href="#resume" class="bg-blue-500 text-white px-8 py-4 rounded-full hover:bg-blue-600">View My Resume</a>
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-6 py-1">
+        <h3 class="text-4xl font-bold text-center mb-16 text-blue-400">Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h4 class="text-2xl font-bold mb-6 text-blue-300">Frontend</h4>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center"><img src="./javascript-series.jpg" alt="JavaScript Logo" class="w-6 h-6 mr-2">JavaScript</li>
+                    <li class="flex items-center"><img src="./html5-wow-image-w3c.jpg" alt="HTML Logo" class="w-6 h-6 mr-2">HTML</li>
+                    <li class="flex items-center"><img src="./css.png" alt="CSS Logo" class="w-6 h-6 mr-2">CSS</li>
+                    <li class="flex items-center"><img src="./tailwind css.png" alt="Tailwind CSS Logo" class="w-6 h-6 mr-2">Tailwind CSS</li>
+                    <li class="flex items-center"><img src="./reactJS.jpg" alt="ReactJS Logo" class="w-6 h-6 mr-2">ReactJS</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-2xl font-bold mb-6 text-blue-300">Backend</h4>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center"><img src="./nodeJs.png" alt="NodeJS Logo" class="w-6 h-6 mr-2">NodeJS</li>
+                    <li class="flex items-center"><img src="./express-js.png" alt="ExpressJS Logo" class="w-6 h-6 mr-2">ExpressJS</li>
+                    <li class="flex items-center"><img src="path/to/restful-api-logo.png" alt="RESTful APIs Logo" class="w-6 h-6 mr-2">RESTful APIs</li>
+                    <li class="flex items-center"><img src="./mongoDb.jpg" alt="MongoDB Logo" class="w-6 h-6 mr-2">MongoDB</li>
+                    <li class="flex items-center"><img src="./mariaDB.jpg" alt="MariaDB Logo" class="w-6 h-6 mr-2">MariaDB</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-20">
+        <h3 class="text-4xl font-bold text-center mb-16 text-blue-400">About Me</h3>
+        <div class="bg-gray-800 p-10 rounded-lg shadow-lg text-center">
+            <h4 class="text-2xl font-bold mb-4">Profile</h4>
+            <p class="text-lg mb-6">Web Developer with expertise in React.js, Redux, Cloud Firestore, HTML, and CSS. Currently learning React Native for Mobile Application.</p>
+            <p class="text-lg mb-6">I am a passionate programmer and a learner, born and brought up in Pakistan. Currently, I am enrolled in Tech Karo - Web Development Program "Conducted by CIRCLE". Along with that, I also help people as a COACH on their journey of becoming a professional programmer. I love learning about new technologies, what problems they are solving, and how I can use them to build better and scalable products.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 py-20">
+        <h3 class="text-4xl font-bold text-center mb-16 text-blue-400">Contact</h3>
+        <div class="bg-gray-800 p-10 rounded-lg shadow-lg text-center">
+            <h4 class="text-2xl font-bold mb-4">Get in Touch</h4>
+            <p class="text-lg mb-4">Phone: <a href="tel:8006306957" class="text-blue-400">800-630-6957</a></p>
+            <p class="text-lg mb-4">Email: <a href="mailto:pashaazeem433@gmail.com" class="text-blue-400">pashaazeem433@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-4">
+        <p class="text-gray-400">&copy; 2024 Azeem Pasha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
